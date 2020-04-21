@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    font-weight: 900;
+}
+
+.intro-subheading{
+    color: #F18119;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.top-description,
+.privacy-disclosure {
+    font-size: 0.625rem;
+}
+
+.top-description {
+    margin-top: 0;
+    color: #F18119;
+    font-weight: 900;
+    letter-spacing: 1.6;
+    text-transform: uppercase;
+    border-top: 1em solid #F18119;
+    border-image: linear-gradient(to right,  #ffa51d, #ff713b) 1;
+    padding-top: 3px;
+}
+
+.main-heading {
+    margin: 0;
+}
+
+.main-subhead {
+    text-transform: uppercase;
+    color: #F18119;
+    font-weight: 900;
+    margin-top: 0;
+}
+
+.main-text {
+    font-weight: 300;
+    color: #5A5A5A
+}
+
+.privacy-disclosure {
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Intro */
+.intro-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.top-description {
+    order: -1;
+}
+
+.intro {
+    background-color: #404040;
+    background-image: url(../img/dark-ribs.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 .5em 2em;
+}
+
+/* Main */
+.main-content {
+    padding: 2em 1em;
+}
+
+/* Form */
+.registration-form {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.registration-form *{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-input {
+    padding: 1em .25em;
+    font-size: 0.625rem;
+    font-family: inherit;
+    text-align: center;
+    border: 1px solid #404040;
+    margin-bottom: 1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2.5em;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #ff713b, #ffa51d);
+    border: 1px solid #404040;
+    color: #FFFFFF;
+    transition: 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+    border: 1px solid white;
+    color: #404040;
+}
+
+/* Media */
+@media (min-width: 600px){
+   .display-flex {
+       display: flex;
+       flex-direction: row;
+       min-height: 100vh;
+   }  
+
+   .intro, 
+   .main-content {
+       width: 50%;
+   }
+
+   .main-content {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+
+   .intro *,
+   .main-content * {
+       max-width: 450px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+   body {
+       font-size: 1.125rem;
+   }
+
+   h1 {
+       font-size: 3.5rem;
+   }
+
+   h2 {
+       font-size: 1.75rem;
+   }
+}
